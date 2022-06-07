@@ -1,0 +1,99 @@
+:root {
+    --primary: rgb(29, 95, 64);
+    --secondary: rgb(174, 125, 1);
+    --tertiary: rgb(109, 105, 158);
+    --white: rgb(212, 207, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color:rgb(29, 95, 64);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header/Nav Bar start*/
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('../images/blue_and_white_rock.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    background-color: var(--primary);
+    padding: 20px 35px;
+    color: var(--secondary);
+}
+
+h1 {
+    font-size: 250%;
+    color: var(--tertiary);
+}
+
+h2 {
+    margin: 2% 0;
+    font-size: 250%;
+    color:rgb(159, 226, 252);
+}
+
+h3 {
+    margin: 2% 0;
+    font-size: 250%;
+    color:rgb(159, 226, 252);
+
+}
+
+h4 {
+    margin: 2% 0;
+    font-size: 250%;
+    color:rgb(159, 226, 252);
+}
+
+nav ul {
+    display: flex;
+    justify-content: row space-between;
+    min-width: 300px;
+    color:darkorange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul:hover {
+    color:chartreuse;
+}
+
+main {
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 2% auto;
+}
+
+footer {
+    background-color: rgb(140, 75, 0);
+}
+
+
+img {
+    display: flex;
+    width: auto;
+    max-height: 100%;
+}
+
+.flex-row {
+    display: flex;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
