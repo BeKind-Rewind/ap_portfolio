@@ -1,6 +1,6 @@
 :root {
     --primary: rgb(0, 71, 133);
-    --secondary: rgb(192, 142, 16);
+    --secondary: rgb(167, 123, 12);
     --tertiary: rgb(255, 170, 0);
     --white: rgb(212, 207, 255);
 }
@@ -11,72 +11,57 @@
     box-sizing: border-box;
 }
 
+img {
+    display: flex;
+    width: auto;
+    max-height: 100%;
+}
 
 body {
-    color:rgb(29, 95, 64);
+    background-color: var(--primary);
     font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
 /* Header/Nav Bar start*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     background-image: url('../images/blue_and_white_rock.jpeg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    background-color: var(--primary);
     padding: 20px 35px;
-    color: var(--secondary);
+    /* display: flex; */
+    /* justify-content: space-between; */ 
+    /* flex-wrap: wrap; */
+    /* background-color: var(--primary); */
+    
+    color: var(--primary);
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-image: url('../images/blue_and_white_rock.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 100%;
-    padding: 20px 35px;
-    color: var(--secondary);
-}
-
+/* add shadow to h1 */
+/* this h1 doesn't seem to do anything */
 h1 {
     font-size: 250%;
-    color: var(--tertiary);
-}
-
-h2 {
-    margin: 2% 0;
-    font-size: 200%;
-    color:rgb(159, 226, 252);
-}
-
-h3 {
-    margin: 2% 0;
-    font-size: 200%;
-    color:rgb(159, 226, 252);
-
-}
-
-h4 {
-    margin: 2% 0;
-    font-size: 200%;
-    color:rgb(159, 226, 252);
+    color: var(--primary);
+    text-decoration: none;
+    text-shadow: 15vw black;
 }
 
 nav ul {
     display: flex;
-    justify-content: row space-between;
-    min-width: 300px;
-    color:darkorange;
+    justify-content: space-between;
+    color: var(--primary);
     font-weight: bold;
+    text-decoration: none;
 
 }
 
@@ -84,43 +69,73 @@ nav ul:hover {
     color:chartreuse;
 }
 
+/* Nav styling end */
+
+
+/* main styling start */ 
+
 main {
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 1200px;
+    /* display: flex; */ 
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    background-image: url('../images/blue_and_white_rock.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    /* padding: 0px 35px; */
+    color: var(--secondary);
+    max-width: 5680px;
     margin: 2% auto;
+    
 }
+
+.hero {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero h2 {
+    margin: 2% 0;
+    font-size: 200%;
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 200%;
+    color: var(--primary);
+}
+
+p {
+    display: flex;
+    max-width: 380;
+}
+
+h3 {
+    margin: 2% 0;
+    font-size: 150%;
+    color: var(--primary);
+
+}
+
+h4 {
+    margin: 2% 0;
+    font-size: 125%;
+    color: var(--primary);
+}
+
+
+
+
 
 footer {
-    background-color: rgb(140, 75, 0);
-}
-
-
-img {
-    display: flex;
-    width: auto;
-    max-height: 100%;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.container h1 {
-    text-decoration: none;
-}
-
-.container ul li {
-    display: flex;
-
+    background-position: fixed;
 }
 
 .flex-row {
     display: flex;
     padding-bottom: 20px;
-    text-align: left;
+    text-align: center;
     margin: 0 auto 35px auto;
     width: 80%;
 }
