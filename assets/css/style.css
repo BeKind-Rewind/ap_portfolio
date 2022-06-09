@@ -1,8 +1,8 @@
 :root {
     --primary: rgb(0, 71, 133);
-    --secondary: rgb(167, 123, 12);
+    --secondary: rgb(0, 37, 70);
     --tertiary: rgb(255, 170, 0);
-    --white: rgb(212, 207, 255);
+    --light: rgb(44, 133, 211);
 }
 
 * {
@@ -18,17 +18,20 @@ img {
 }
 
 body {
-    background-color: var(--primary);
+    background-image: url('../images/blue_and_white_rock.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 /* Header/Nav Bar start*/
+
 .container {
     width: 80%;
     margin: 0 auto;
 }
-
 
 header {
     position: -webkit-sticky;
@@ -38,11 +41,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    padding: 20px 35px;
+    padding: 10px;
     /* display: flex; */
     /* justify-content: space-between; */ 
     /* flex-wrap: wrap; */
-    /* background-color: var(--primary); */
     color: var(--primary);
 }
 
@@ -52,25 +54,61 @@ header::after {
     clear: both;
 }
 
-/* add shadow to h1 */
-/* ********this h1 doesn't seem to do anything******** */
+/* add shadow to h1, shadow not working */
 h1 {
     font-size: 250%;
+    display: flex;
+    justify-content: flex-start;
     color: var(--primary);
-    text-shadow: 15vw black;
+    text-shadow: 5px 5px 5px var(--tertiary);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     color: var(--primary);
-    font-weight: bold;
-    text-decoration: none;
+    list-style: none;
 
 }
 
-nav ul:hover {
-    color:chartreuse;
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 15px;
+    background-color: var(--secondary);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
 
 /* Nav styling end */
@@ -78,25 +116,15 @@ nav ul:hover {
 
 /* main styling start */ 
 
-main {
-    /* display: flex; */ 
-    /* justify-content: space-around; */
-    flex-wrap: wrap;
-    background-image: url('../images/blue_and_white_rock.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    /* padding: 0px 35px; */
-    color: var(--secondary);
-    max-width: 5680px;
-    margin: 2% auto;
-    
-}
 
 .hero {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     display: flex;
     justify-content: space-around;
+}
+
+.hero-cta {
+    display: flex;
 }
 
 .hero h2 {
@@ -105,15 +133,58 @@ main {
     color: var(--primary);
 }
 
+
 h2 {
     font-size: 200%;
     color: var(--primary);
 }
 
-p {
-    display: flex;
-    max-width: 380;
+/* ABOUT me */
+
+.bullet {
+    background-color: var(--secondary);
+    padding: 15px;
+    width: 80%;
+    border: 5px solid var(--tertiary);
+    color: var(--light);
 }
+
+/* bio */
+
+.more {
+    padding: 0;
+    height: 300px;
+    width: 80%;
+    border: 5px solid var(--tertiary);
+    color:var(--light);
+    text-shadow: 5px, 5px, var(--secondary) 15px; 
+}
+
+.story {
+    background-color: var(--secondary);
+    padding: 10px;
+    height: 300px;
+    width: 80%;
+    border: 5px solid var(--tertiary);
+    color: var(--light);
+}
+
+/* about me style end */
+
+/* my pieces style start */
+
+.work {
+    display: flex;
+    justify-content:space-around
+}
+
+.piece-about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
 
 h3 {
     margin: 2% 0;
@@ -122,24 +193,41 @@ h3 {
 
 }
 
+
+
 h4 {
     margin: 2% 0;
     font-size: 125%;
     color: var(--primary);
 }
 
-
-
-
-
-footer {
-    background-position: fixed;
-}
-
 .flex-row {
     display: flex;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto 35px auto;
     width: 80%;
+}
+
+.contact-info {
+    Display: flex;
+    justify-content: space-around;
+}
+
+.conact-info ul {
+    margin: 0;
+    padding: 0;
+    color: var(--primary);
+    list-style: none;
+}
+
+.conact-info ul li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+footer {
+    background-position: fixed;
 }
