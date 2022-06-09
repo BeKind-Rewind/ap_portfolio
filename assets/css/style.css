@@ -43,16 +43,20 @@ header {
     /* justify-content: space-between; */ 
     /* flex-wrap: wrap; */
     /* background-color: var(--primary); */
-    
     color: var(--primary);
 }
 
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* add shadow to h1 */
-/* this h1 doesn't seem to do anything */
+/* ********this h1 doesn't seem to do anything******** */
 h1 {
     font-size: 250%;
     color: var(--primary);
-    text-decoration: none;
     text-shadow: 15vw black;
 }
 
