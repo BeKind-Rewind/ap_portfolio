@@ -43,9 +43,6 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     padding: 10px;
-    /* display: flex; */
-    /* justify-content: space-between; */ 
-    /* flex-wrap: wrap; */
     color: var(--primary);
 }
 
@@ -55,7 +52,6 @@ header::after {
     clear: both;
 }
 
-/* add shadow to h1, shadow not working */
 h1 {
     font-size: 250%;
     display: flex;
@@ -88,7 +84,8 @@ nav a {
     color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 nav a:hover {
@@ -231,17 +228,23 @@ h4 {
     padding: 0;
     color: var(--primary);
     list-style: none;
+    margin: 10px;
 }
 
-.conact li {
+.conact ul li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 23px;
-    position: relative;
+    border-radius: 60px;
+    background-color: var(--secondary);
+    border-color: 5px solid white;
     color: var(--primary);
 }
 
 
 footer {
     background-position: fixed;
+}
+
+p, h2, h3, h4 {
+    border-radius: 60px;
+    background-color: var(--secondary);
 }
