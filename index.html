@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel=stylesheet href="assets/css/reset.css">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />       
         <link rel=stylesheet href="assets/css/style.css">
         <title>Portfolio: A. Perry</title>
     </head>
@@ -17,13 +16,13 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="about-me">About Me</a>
+                            <a href="#aboutme">About Me</a>
                         </li>
                         <li>
-                            <a href="my-pieces">My Pieces</a>
+                            <a href="#work">Work</a>
                         </li>
                         <li>
-                            <a href="contact">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -35,63 +34,63 @@
         <!-- hero start -->
         <section class="hero">
             <div class="hero-cta">
-                <h2>About Me</h2>
-                <div class="bullet">
-                    <p>
-                        Budding Coder, Professional Coach, Athlete, Musician, Artist. 
-                    </p>
-                    <br/>
-                    <p>
-                        My parents are my inspiration. I grew up as a poor, nerdy, youngest-sibling of 4 without many 
-                        friends in the mid-west. I had no expectations of gradure but found ways to put my curiousity 
-                        and creativity to work: I learned to entertain myself finding solace in drawing, music, constructing, and video 
-                        games. As early as 5-years-old (mid-80's), time with Dad often involved playing games on 
-                        his work computer, the Commadore-64, experimenting with the command line code, and discovering 
-                        why sticking magnets to the hard-drive was a "no-no." The interaction with the computer was
-                        an especially novel treat. No one had home computers at that time and we certainly couldn't 
-                        have afforded anything like that! Every minute I was allowed to interact with it, or even watch 
-                        my dad work through problems, was like a visit to Willy Wonka's Chocolate Factory. 
-                    </p>
-                </div>
-                <div class="more">
-                    <h2>Bio:</h2>
-                    <div class="story">
+                <img src="./assets/images/AP_Headshot.JPG"  
+                alt="Headshot of Amanda Perry with long straight hair, glasses, and wearing a red and white Indiana University polo." />
+                <section id="aboutme">
+                    <h2>About Me</h2>
+                    <div class="bullet">
                         <p>
-                            Bachelor's of Art in Music Education, The Ohio State University 2006, cum laude.
+                         Budding Coder, Professional Coach, Athlete, Musician, Artist. 
                         </p>
-                    <br/>
+                        <br/>
                         <p>
-                            Rowing Coach: I have been coaching rowing since 2006 with great successes, earning 2 NCAA 
-                            Division-1 national championship titles for Brown University and University of Virginia. 
-                            I met my husband, also a career, competitive D-1 rowing coach and made the life-decision 
-                            to get married and move to Dallas to coach youth. 
+                          My parents are my inspiration. I grew up as a poor, nerdy, youngest-sibling of 4 without many 
+                          friends in the mid-west. I had no expectations of gradure but found ways to put my curiousity 
+                          and creativity to work: I learned to entertain myself finding solace in drawing, music, constructing, and video 
+                          games. As early as 5-years-old (mid-80's), time with Dad often involved playing games on 
+                          his work computer, the Commadore-64, experimenting with the command line code, and discovering 
+                          why sticking magnets to the hard-drive was a "no-no." The interaction with the computer was
+                          an especially novel treat. No one had home computers at that time and we certainly couldn't 
+                          have afforded anything like that! Every minute I was allowed to interact with it, or even watch 
+                          my dad work through problems, was like a visit to Willy Wonka's Chocolate Factory. 
+                        </p>
+                        <br/>
+                        <p>
+                          Education: Bachelor's of Art in Music Education, The Ohio State University 2006, cum laude.
+                          SMU Coding Bootcamp 2022
+                        </p>
+                        <br/>
+                        <p>
+                          Rowing Coach: I have been coaching rowing since 2006 with great successes, earning 2 NCAA 
+                          Division-1 national championship titles for Brown University and University of Virginia. 
+                          I met my husband, also a career, competitive D-1 rowing coach and made the life-decision 
+                          to get married and move to Dallas to coach youth. 
                         </p> 
+                        <br/>
                     </div>
-                    <br/>
-                </div>
+                </section>
             </div>
         </section>
         <!-- end hero -->
 
         <main>
             
-            <!-- "my pieces" section start-->
+            <!-- "work" section start-->
             <section id="work">
                 <div class="my-pieces">
-                    <h2> 
-                        <!-- class="section-title primary-border" (holding)-->
-                        My Pieces
-                    </h2>
+                    <h2> Work</h2>
                 </div>
 
                 <div class="pieces">
                     <article class="piece">
-                        <div class="piece-about">
-                            <h3>Horiseon</h3>
+                        <div class="piece-about"> 
                             <img src="./assets/images/horiseon-hero.png" 
                              href="https://bekind-rewind.github.io/horiseon/" 
                              alt="Horiseon site" />
-                            <h4 class="piece-type">Accessibility</h4>
+                            <br/>
+                            <h3 class="piece-name">Horiseon</h3>
+                            <br/>
+                            <h4>Accessibility</h4>
                             <p>
                                 Refactored for accessibility.
                             </p>
@@ -100,11 +99,14 @@
                     <br/>
                     <article class="piece">
                         <div class="piece-about">
-                            <h3 class="piece-name">Run Buddy</h3>
+                            
                             <img src="./assets/images/run-buddy-tag.png" 
                              href="https://bekind-rewind.github.io/run-buddy/" 
                              alt="Run Buddy Landing site with background image of runner tying her shoes." />
-                            <h4 class="piece-type">Device friendly & site enhancements</h4>
+                            <br/>
+                             <h3 class="piece-name">Run Buddy</h3>
+                             <br/>
+                             <h4>Device friendly & site enhancements</h4>
                             <p>
                                 Fresh new look, user-friendly, mobile-friendly.
                             </p>
@@ -115,9 +117,10 @@
                         <div class="piece-about">
                             <h3 class="piece-name">Robot Gladiators</h3>
                             <img src="./assets/images/2_robots.png" 
-                             alt="Robot figures" />
-
+                             alt="headshots of two humans wearing cheaply-constructed robot-heads, made out of cardboard and silver spray-paint." />
+                            <br/>
                             <h4 class="piece-type">Coming soon</h4>
+                            <br/>
                             <p>
                                 Classic gameplay; killer robot survival skills
                             </p>
@@ -125,10 +128,10 @@
                     </article>
                 </div>
             </section>
-        <!-- "my pieces" end -->
+        <!-- "work" end -->
         <br/>
         <!-- "contact" start -->
-        <section id="my-contact" class="contact">
+        <section id="contact">
             <div class="flex-row">
                 <h2 class="section-title secondary-border">
                     Contact
@@ -143,7 +146,7 @@
                         Contact:
                     </p>
                     <br/>
-                    
+                    <section class="contact">
                         <ul>
                             <li>
                                 10 Main Street Forney TX 75126
@@ -155,7 +158,7 @@
                                 e. <a href="mailto:apperry@gmail.com">apperry@gmail.com</a>
                             </li>
                         </ul>
-                    </address>
+                    </section>
                 </div>
             </div>
         </section>

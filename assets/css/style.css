@@ -15,6 +15,7 @@ img {
     display: flex;
     width: auto;
     max-height: 100%;
+    border: 5px solid white;
 }
 
 body {
@@ -175,16 +176,25 @@ h2 {
 
 .work {
     display: flex;
-    justify-content:space-around
-}
-
-.piece-about {
-    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
+.piece-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
+.piece-name {
+    font-weight: bolder;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    padding: 20px 20px;
+}
 
 h3 {
     margin: 2% 0;
@@ -194,12 +204,14 @@ h3 {
 }
 
 
-
 h4 {
     margin: 2% 0;
     font-size: 125%;
     color: var(--primary);
 }
+
+
+/* contact info style start */
 
 .flex-row {
     display: flex;
@@ -214,19 +226,21 @@ h4 {
     justify-content: space-around;
 }
 
-.conact-info ul {
+.conact ul {
     margin: 0;
     padding: 0;
     color: var(--primary);
     list-style: none;
 }
 
-.conact-info ul li {
+.conact li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
     position: relative;
+    color: var(--primary);
 }
+
 
 footer {
     background-position: fixed;
