@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:antiquewhite;
+    
 }
 
 img {
@@ -26,6 +26,7 @@ body {
     background-position: 80%;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
+    color:antiquewhite;
 }
 
 /* Header/Nav Bar start*/
